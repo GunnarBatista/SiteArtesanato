@@ -1,0 +1,41 @@
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    vertical-align: middle;
+    align-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    position: fixed;
+    top: 0;
+}
+.footer{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+}
+.titulo{
+    padding: 0 0 0 10px;
+    color: white;
+}
+.logo{
+    width: 100px;
+    height: 50px;
+}
+.content-buttons{
+    width: 500px;
+    display: flex;
+    padding: 0 0 0 100px;
+    justify-content: end;
+}
+.header-buttons{
+    color: white;
+    list-style-type: none;
+    padding-left: 2rem;
+}
+ul{
+    display: flex;
+}
