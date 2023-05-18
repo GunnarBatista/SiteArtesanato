@@ -1,61 +1,57 @@
-.header{
+.header {
     justify-content: center;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
     position: relative;
     max-width: 100vw;
-    background-color: pink;
+    background-color: #a85f3a;
 }
-.body{
-    display: flex;
-    flex-direction: column;
+body {
+    margin: 0 !important;
     -webkit-box-pack: justify;
     justify-content: space-between;
     min-height: 100vh;
+    background-color: #8e4925;
 }
-body{
-    margin: 0 !important;
-}
-.footer{
-    background-color: pink;
+.footer {
+    background-color: #4180a6;
     position: relative;
     bottom: 0;
     width: 100%;
     height: 200px;
     display: block;
 }
-.titulo{
+.titulo {
     padding: 0 0 0 50px;
     color: white;
 }
-.logo{
-    width: 100px;
-    height: 50px;
+.logo {
+    width: 200px;
+    height: 100px;
     vertical-align: middle;
-    padding: 5px 10px 0 10px;
+    padding: 5px 10px 5px 10px;
 }
-.content-buttons{
+.content-buttons {
     width: 50%;
     display: flex;
     justify-content: end;
     margin-right: 20px;
 }
-.header-title{
+.header-title {
     width: 50%;
     display: flex;
     justify-content: start;
-
 }
-.header-buttons{
+.header-buttons {
     color: white;
     list-style-type: none;
     padding-left: 2rem;
 }
-ul{
+ul {
     display: flex;
 }
-.btn-header{
+.btn-header {
     width: 100px;
     height: 50px;
     background-color: #00000030;
@@ -63,13 +59,86 @@ ul{
     border: 0;
     border-radius: 15px;
 }
-.btn-header:hover{
+.btn-header:hover {
     background-color: #00000050;
 }
-main{
+main {
     display: flex;
-    min-height:75vh;
+    min-height: 75vh;
+    justify-content: center;
 }
-.content{
+.content {
     max-width: 90rem;
+    width: 90rem;
+    background: #7f3c19;
+    display: grid;
+    justify-content: center;
+}
+
+.card {
+    padding: 25px 25px 25px 25px;
+    width: 280px;
+    border-radius: 25px;    
+}
+
+.card-head {
+    position: relative;
+    height: 252px;
+    background: #fa782e;
+    background: -moz-linear-gradient(-45deg, #fa782e 8%, #c82930 83%);
+    background: -webkit-linear-gradient(-45deg, #fa782e 8%, #c82930 83%);
+    background: linear-gradient(135deg, #fa782e 8%, #c82930 83%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fa782e', endColorstr='#c82930', GradientType=1);
+    border-radius: 25px 25px 0 0;
+}
+.product-img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.card-body {
+    height: 255px;
+    background: #fff;
+    border-radius: 0 0 25px 25px;
+  }
+.content-body{
+    display: inline-flex;
+    justify-content: center;
+}
+.product-content-img{
+    justify-content: center;
+    display: flex;
+}
+.product-price {
+    position: absolute;
+    background: #11e95b;
+    padding: 7px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    border-radius: 7px;
+    margin-top: -13px;
+    margin-left: -5px;
+    box-shadow: -10px 20px 15px -10px rgba(17, 233, 91, 0.3);
+    margin: 10% 0 0 0;
+  }
+  .product-price b {
+    margin-left: 5px;
+  }
+  .product-properties{
+    display: flex;
+    justify-content: end;
+  }
+  .product-desc{
+    display: grid;
+  }
+.content-title{
+    font-weight: 900;
+    font-size: x-large;
+    color: white;
+    display: flex;
+    justify-content: center;
 }
