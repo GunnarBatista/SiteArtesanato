@@ -68,8 +68,8 @@ main {
     justify-content: center;
 }
 .content {
-    max-width: 90rem;
-    width: 90rem;
+    max-width: 75vw;
+    width: 75vw;
     background: #7f3c19;
     display: grid;
     justify-content: center;
