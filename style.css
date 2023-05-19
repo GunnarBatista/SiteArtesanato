@@ -18,8 +18,8 @@ body {
     background-color: #4180a6;
     position: relative;
     bottom: 0;
-    width: 100%;
-    height: 200px;
+    max-width: 100vw;
+    height: 25vh;
     display: block;
 }
 .titulo {
@@ -50,6 +50,7 @@ body {
 }
 ul {
     display: flex;
+    list-style: none;
 }
 .btn-header {
     width: 100px;
@@ -111,7 +112,7 @@ main {
     display: flex;
 }
 .product-price {
-    position: absolute;
+    position: relative;
     background: #11e95b;
     padding: 7px 20px;
     text-align: center;
@@ -120,8 +121,6 @@ main {
     font-weight: 200;
     color: #fff;
     border-radius: 7px;
-    margin-top: -13px;
-    margin-left: -5px;
     box-shadow: -10px 20px 15px -10px rgba(17, 233, 91, 0.3);
     margin: 10% 0 0 0;
   }
