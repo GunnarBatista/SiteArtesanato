@@ -154,9 +154,6 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
-.product-content-img {}
-
 .product-price {
   position: relative;
   background: #11e95b;
