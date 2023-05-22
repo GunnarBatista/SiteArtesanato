@@ -5,21 +5,24 @@
   <link rel="stylesheet" href="style.css" />
   <title>Imaterial</title>
   <link rel="Website Icon" type="png" href="src/logo.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.css">
+  <script src="functions.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
   <header class="header">
     <div class="header-title">
-      <a href="header.html"><img alt="Imaterial: cultura, artesanto e história " class="logo" src="src/logo.png" /></a>
-      <h2 class="titulo">IMATERIAL</h2>
+      <a href="index.html"><img alt="Imaterial: cultura, artesanto e história " class="logo" src="src/logo.png" /></a>
     </div>
     <div class="content-buttons">
       <ul>
         <li onclick="location.href='produtos.html'" class="header-buttons"><button class="btn-header">Produtos</button>
         </li>
-        <li onclick="location.href='contato.html'" class="header-buttons"><button class="btn-header">Contato</button>
+        <li onclick="location.href='contact.html'" class="header-buttons"><button class="btn-header">Contato</button>
         </li>
-        <li onclick="location.href='sobre.html'" class="header-buttons"><button class="btn-header">Sobre</button></li>
+        <li onclick="location.href='about.html'" class="header-buttons"><button class="btn-header">Sobre</button></li>
       </ul>
     </div>
   </header>
@@ -29,74 +32,163 @@
         <h2>PRODUTOS EM DESTAQUE</h2>
       </div>
       <div class="content-body">
-        <ul>
-        <li class="card">
-          <div class="card-head">
-            <div class="product-content-img">
-              <img class="product-img" src="./src/Products/product1.png"/>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="product-desc">
-
-            </div>
-            <div class="product-properties">
-              <span class="product-price">
-            </div>
-          </div>
-        </li>
-        <li class="card">
-          <div class="card-head">
-            <div class="product-content-img">
-              <img class="product-img" src="./src/Products/product2.png"/>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="product-desc">
-              
-            </div>
-            <div class="product-properties">
-              <span class="product-price">
-            </div>
-          </div>
-        </li>
-        <li class="card">
-          <div class="card-head">
-            <div class="product-content-img">
-              <img class="product-img" src="./src/Products/product3.png"/>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="product-desc">
-              
-            </div>
-            <div class="product-properties">
-              <span class="product-price">
-            </div>
-          </div>
-        </li>
-        <li class="card">
-          <div class="card-head">
+        <ul class="list-itens">
+          <li class="card-index">
+            <div class="card-head">
               <div class="product-content-img">
-                <img class="product-img" src="./src/Products/product4.png"/>
+                <img class="product-img" src="./src/Products/product6.png" />
               </div>
-          </div>
-          <div class="card-body">
-            <div class="product-desc">
             </div>
-            <div class="product-properties">
-              <span class="product-price">R$: 250,00</span>
+            <div class="card-body">
+              <div class="product-desc">
+                <h2 class="product-title">Escultura Moderna</h2>
+                <span>Com formas esculturais e uma estética
+                  contemporânea, ele se destaca como uma peça de destaque em qualquer ambiente. Seu design único e
+                  ousado certamente impressionará os amantes de arte e design.</span>
+              </div>
+              <div class="product-properties">
+                <span class="product-price">R$: 149,90</span>
+              </div>
+              <div class="button-cart">
+                <button class="button-cart-item" onclick="alerta()">Adicionar ao carrinho</button>
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+          <li class="card-index">
+            <div class="card-head">
+              <div class="product-content-img">
+                <img class="product-img" src="./src/Products/product7.png" />
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="product-desc">
+                <h2 class="product-title">Geométrico</h2>
+                <span>Com formas geométricas ousadas e linhas limpas, este vaso traz um toque moderno à decoração. Sua
+                  combinação de ângulos e curvas cria um visual dinâmico e sofisticado, perfeito para aqueles que buscam
+                  um estilo contemporâneo e elegante.</span>
+              </div>
+              <div class="product-properties">
+                <span class="product-price">R$: 99,90</span>
+              </div>
+              <div class="button-cart">
+                <button class="button-cart-item" onclick="alerta()">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </li>
+          <li class="card-index">
+            <div class="card-head">
+              <div class="product-content-img">
+                <img class="product-img" src="./src/Products/product8.png" />
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="product-desc">
+                <h2 class="product-title">Minimalista</h2>
+                <span>Este vaso minimalista é ideal para ambientes contemporâneos. Sua
+                  forma geométrica simples e acabamento suave proporcionam um visual sofisticado e minimalista,
+                  destacando a beleza das plantas de forma discreta e elegante.</span>
+              </div>
+              <div class="product-properties">
+                <span class="product-price">R$: 79,90</span>
+              </div>
+              <div class="button-cart">
+                <button class="button-cart-item" onclick="alerta()">Adicionar ao carrinho</button>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
+    </div>
+    <div class="content">
+      <h1>IMATERIAL</h1>
+      <br />
+      <div class="justify">
+        <span>
+          Somos uma empresa de artesanato de argila especializada na criação de vasos únicos e belos. Nossos artesãos
+          talentosos esculpem cada peça à mão, utilizando técnicas tradicionais e um toque contemporâneo para garantir
+          detalhes e acabamentos excepcionais. Inspirados pela natureza e diferentes culturas, nossos vasos são
+          verdadeiras obras de arte que combinam estética e funcionalidade. Valorizamos a sustentabilidade em nosso
+          processo de produção e oferecemos um atendimento personalizado para atender às necessidades de cada cliente.
+          Permita que nossos vasos artesanais de argila tragam um toque especial ao seu espaço.</span>
+      </div>
+      <h2>Missão</h2>
+      <div class="justify">
+        <span>Nossa missão é criar e fornecer produtos artesanais de alta qualidade, feitos à mão com argila, que tragam
+          beleza e inspiração para os lares de nossos clientes. Nosso objetivo é preservar a tradição do artesanato em
+          argila, combinando técnicas tradicionais com um toque de criatividade contemporânea, resultando em peças
+          únicas e distintas.</span>
+      </div>
+      <h2>Visão</h2>
+      <div class="justify">
+        <span>Buscamos ser reconhecidos como a principal referência em artesanato de vasos e objetos de argila, tanto
+          localmente como internacionalmente. Queremos inspirar e encantar nossos clientes, destacando-nos pela
+          qualidade excepcional de nossos produtos e pela dedicação ao detalhe artesanal. Almejamos expandir nosso
+          alcance, estabelecendo parcerias com lojas de decoração e galerias de arte, bem como fortalecer nossa presença
+          online, tornando-se um destino online confiável para os amantes de artesanato.</span>
+      </div>
+      <h2>Valores</h2>
+      <div class="justify">
+        <span>Qualidade e autenticidade: Comprometemo-nos a criar peças artesanais de argila que reflitam a verdadeira
+          essência do artesanato, valorizando a qualidade, a originalidade e o trabalho manual cuidadoso. Buscamos
+          sempre aprimorar nossas habilidades e técnicas, a fim de oferecer produtos excepcionais aos nossos clientes.
+        </span>
+        <p></p>
+        <span>
+          Criatividade e inovação: Encorajamos a criatividade em nosso trabalho, combinando técnicas tradicionais com
+          novas abordagens e designs contemporâneos. Buscamos constantemente novas ideias e inspirações para oferecer
+          uma variedade de estilos e padrões que cativem o gosto diversificado de nossos clientes.
+        </span>
+        <p></p>
+        <span>
+          Sustentabilidade e respeito ao meio ambiente: Valorizamos a natureza e buscamos minimizar nosso impacto
+          ambiental. Utilizamos materiais ecológicos e práticas sustentáveis em nossa produção, promovendo o uso
+          responsável dos recursos naturais. Buscamos também conscientizar nossos clientes sobre a importância da
+          sustentabilidade e encorajá-los a escolher produtos duráveis e amigos do meio ambiente.
+        </span>
+        <p></p>
+        <span>
+          Valorização das pessoas: Reconhecemos a importância de nossa equipe e colaboradores, valorizando seu
+          talento, criatividade e habilidades. Promovemos um ambiente de trabalho positivo, colaborativo e inclusivo,
+          onde cada indivíduo é respeitado e encorajado a contribuir com suas ideias e perspectivas únicas.
+        </span>
+        <p></p>
+        <span>
+          Satisfação do cliente: Buscamos sempre exceder as expectativas de nossos clientes, oferecendo um atendimento
+          atencioso, produtos de qualidade superior e uma experiência de compra memorável. Valorizamos o feedback de
+          nossos clientes e buscamos constantemente melhorar nossos produtos e serviços com base em suas necessidades e
+          desejos.
+        </span>
+      </div>
+    </div>
   </main>
   <footer class="footer">
-    <div class="">
-
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Sobre</h3>
+        <p>Somos uma empresa de artesanato de argila especializada na criação de vasos únicos e belos.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Links Úteis</h3>
+        <ul class="footer-list">
+          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Redes Sociais</h3>
+        <ul class="social-icons">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Imaterial®. Todos os direitos reservados.</p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.js"></script>
 </body>
 
 </html>
