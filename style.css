@@ -181,6 +181,7 @@ main {
 .product-properties {
   display: flex;
   justify-content: end;
+  padding: 20px 0;
 }
 
 .product-desc {
