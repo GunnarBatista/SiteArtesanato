@@ -140,7 +140,7 @@ main {
 }
 
 .card-body {
-  height: 255px;
+  height: auto;
   background: #fff;
   border-radius: 0 0 25px 25px;
   position: relative;
@@ -153,6 +153,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  height: auto;
 }
 .product-price {
   position: relative;
